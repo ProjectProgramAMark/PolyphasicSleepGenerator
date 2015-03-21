@@ -59,6 +59,9 @@ public class Generator {
 
 
             } else if(whichFormat == 24) {
+                while (nap1.getHours() > 24) {
+                    nap1 = nap1.minusHours(24);
+                }
                 if(nap1.getMinutes() > 60) {
                     nap1 = nap1.plusHours(1).minusMinutes(60);
                 }
@@ -78,6 +81,9 @@ public class Generator {
                     nap2 = (nap2.getHours() > 12) ? nap2.minusHours(12) : nap2;
                 }
             } else if(whichFormat == 24) {
+                while (nap2.getHours() > 24) {
+                    nap2 = nap2.minusHours(24);
+                }
                 if(nap2.getMinutes() > 60) {
                     nap2 = nap2.plusHours(1).minusMinutes(60);
                 }
@@ -96,6 +102,9 @@ public class Generator {
                     nap3 = (nap3.getHours() > 12) ? nap3.minusHours(12) : nap3;
                 }
             } else if(whichFormat == 24) {
+                while (nap3.getHours() > 24) {
+                    nap3 = nap3.minusHours(24);
+                }
                 if(nap3.getMinutes() > 60) {
                     nap3 = nap3.plusHours(1).minusMinutes(60);
                 }
